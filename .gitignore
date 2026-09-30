@@ -1,0 +1,9 @@
+﻿_tools/
+_brand-backup*/
+*backup*/
+_backup*/
+*.bak
+*.tmp
+*.bodyv2.tmp
+.DS_Store
+Thumbs.db
