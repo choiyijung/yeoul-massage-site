@@ -400,3 +400,453 @@ h1,h2,h3{letter-spacing:-.04em!important}
 table{background:#fff!important}
 footer{background:#0d1a36!important;color:#fff!important}
 /* SITE25-32 DESIGN OVERRIDE END */
+
+/* SITE26-32-FINAL-DESIGN START */
+
+html,
+body{
+  background:#f4f7ff!important;
+  color:#4b5f85!important;
+}
+
+body{
+  overflow-x:hidden!important;
+}
+
+main{
+  width:min(1240px,calc(100% - 36px))!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+
+main h1{
+  color:#1e3a8a!important;
+  -webkit-text-fill-color:#1e3a8a!important;
+  opacity:1!important;
+  font-size:clamp(38px,5vw,62px)!important;
+  line-height:1.1!important;
+  word-break:keep-all!important;
+}
+
+main h2{
+  color:#1e3a8a!important;
+  -webkit-text-fill-color:#1e3a8a!important;
+  opacity:1!important;
+  font-size:clamp(29px,3.5vw,46px)!important;
+  line-height:1.18!important;
+  word-break:keep-all!important;
+}
+
+main h3{
+  color:#294b9b!important;
+  -webkit-text-fill-color:#294b9b!important;
+  opacity:1!important;
+  word-break:keep-all!important;
+}
+
+main p{
+  color:#4b5f85!important;
+  -webkit-text-fill-color:#4b5f85!important;
+  opacity:1!important;
+  line-height:1.75!important;
+}
+
+/* 상단 지역 안내 */
+.metro-local-800{
+  background:#ffffff!important;
+  color:#4b5f85!important;
+  opacity:1!important;
+  filter:none!important;
+  border-color:#d4def4!important;
+}
+
+.metro-local-800 .inner{
+  color:#4b5f85!important;
+  opacity:1!important;
+  filter:none!important;
+}
+
+.metro-local-800 h2{
+  color:#1e3a8a!important;
+  -webkit-text-fill-color:#1e3a8a!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+
+.metro-local-800 p{
+  color:#4b5f85!important;
+  -webkit-text-fill-color:#4b5f85!important;
+  opacity:1!important;
+}
+
+.metro-local-800 strong{
+  color:#294b9b!important;
+  -webkit-text-fill-color:#294b9b!important;
+}
+
+.metro-local-800 span,
+.metro-local-800 small{
+  color:#687796!important;
+  -webkit-text-fill-color:#687796!important;
+  opacity:1!important;
+}
+
+/* 장문 GUIDE */
+.ry-longtext{
+  background:#ffffff!important;
+  color:#4b5f85!important;
+  border:1px solid #d4def4!important;
+  border-radius:26px!important;
+  opacity:1!important;
+  filter:none!important;
+}
+
+.ry-longtext-inner{
+  color:#4b5f85!important;
+  opacity:1!important;
+  filter:none!important;
+}
+
+.ry-longtext .kicker{
+  color:#2563eb!important;
+  -webkit-text-fill-color:#2563eb!important;
+  opacity:1!important;
+  font-weight:900!important;
+}
+
+.ry-longtext h2{
+  color:#1e3a8a!important;
+  -webkit-text-fill-color:#1e3a8a!important;
+  opacity:1!important;
+}
+
+.ry-longtext-inner > p{
+  color:#4b5f85!important;
+  -webkit-text-fill-color:#4b5f85!important;
+  opacity:1!important;
+}
+
+.ry-longtext strong{
+  color:#294b9b!important;
+  -webkit-text-fill-color:#294b9b!important;
+}
+
+.ry-longtext-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:18px!important;
+}
+
+.ry-longtext-box{
+  background:#e7edff!important;
+  color:#4b5f85!important;
+  border:1px solid #d4def4!important;
+  border-radius:18px!important;
+  padding:22px!important;
+  opacity:1!important;
+  box-shadow:none!important;
+}
+
+.ry-longtext-box h3{
+  color:#294b9b!important;
+  -webkit-text-fill-color:#294b9b!important;
+}
+
+.ry-longtext-box p{
+  color:#4b5f85!important;
+  -webkit-text-fill-color:#4b5f85!important;
+}
+
+/* 업체 영역 - 기존 좌우 분할 제거 */
+:is(section,div):has(> .company-grid){
+  display:block!important;
+  grid-template-columns:none!important;
+  width:100%!important;
+  max-width:1240px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+
+:is(section,div):has(> .company-grid) > *{
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+}
+
+.company-grid{
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:16px!important;
+  width:100%!important;
+  margin:28px 0 0!important;
+  padding:0!important;
+}
+
+/* 업체 카드 */
+.company-grid .company-card{
+  min-width:0!important;
+  min-height:250px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  padding:22px 18px!important;
+
+  background:#ffffff!important;
+  color:#4b5f85!important;
+
+  border:1px solid #d4def4!important;
+  border-top:4px solid #2563eb!important;
+  border-radius:18px!important;
+
+  box-shadow:0 8px 24px rgba(0,0,0,.06)!important;
+}
+
+.company-grid .ry-rank{
+  width:30px!important;
+  height:30px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+
+  background:#312e81!important;
+  color:#ffffff!important;
+
+  border-radius:9px!important;
+  margin-bottom:14px!important;
+}
+
+.company-grid .company-name,
+.company-grid .company-name a{
+  color:#1e3a8a!important;
+  -webkit-text-fill-color:#1e3a8a!important;
+  font-size:21px!important;
+  line-height:1.3!important;
+  font-weight:900!important;
+  word-break:keep-all!important;
+}
+
+.company-grid .company-sub{
+  flex:1!important;
+  color:#687796!important;
+  -webkit-text-fill-color:#687796!important;
+  font-size:14px!important;
+  line-height:1.65!important;
+  margin:14px 0 18px!important;
+  word-break:keep-all!important;
+}
+
+/* 업체카드 전화/문자 */
+.company-grid .company-actions{
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:8px!important;
+  margin-top:auto!important;
+}
+
+.company-grid .company-actions a{
+  min-height:46px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  border-radius:11px!important;
+  font-size:14px!important;
+  font-weight:900!important;
+  white-space:nowrap!important;
+}
+
+.company-grid .company-actions .call{
+  background:#2563eb!important;
+  color:#ffffff!important;
+  -webkit-text-fill-color:#ffffff!important;
+}
+
+.company-grid .company-actions .sms{
+  background:#312e81!important;
+  color:#ffffff!important;
+  -webkit-text-fill-color:#ffffff!important;
+}
+
+/* SHOP 대표 이미지 */
+body:has(.actions) section:has(table)::before{
+  content:""!important;
+  display:block!important;
+  width:100%!important;
+  height:340px!important;
+  margin:0 0 30px!important;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,0,0,.02),
+      rgba(0,0,0,.14)
+    ),
+    url("/assets/brand/hero.webp") center/cover no-repeat!important;
+
+  border:1px solid #d4def4!important;
+  border-radius:26px!important;
+  box-shadow:0 16px 42px rgba(0,0,0,.10)!important;
+}
+
+body:has(.actions) section:has(table){
+  background:#ffffff!important;
+  color:#4b5f85!important;
+  border:1px solid #d4def4!important;
+  border-radius:28px!important;
+  padding:30px!important;
+}
+
+body:has(.actions) section:has(table) h1{
+  color:#1e3a8a!important;
+  -webkit-text-fill-color:#1e3a8a!important;
+}
+
+body:has(.actions) section:has(table) p{
+  color:#4b5f85!important;
+  -webkit-text-fill-color:#4b5f85!important;
+}
+
+/* SHOP 안내 */
+body:has(.actions) .note,
+body:has(.actions) .text-box{
+  background:#e7edff!important;
+  color:#4b5f85!important;
+  border-color:#d4def4!important;
+}
+
+/* 코스표 */
+body:has(.actions) table{
+  width:100%!important;
+  background:#ffffff!important;
+}
+
+body:has(.actions) table th{
+  background:#e7edff!important;
+  color:#294b9b!important;
+  -webkit-text-fill-color:#294b9b!important;
+}
+
+body:has(.actions) table td{
+  background:#ffffff!important;
+  color:#4b5f85!important;
+  -webkit-text-fill-color:#4b5f85!important;
+}
+
+/* SHOP 하단 고정 전화/문자
+   기존 href 그대로 사용 */
+.actions{
+  position:fixed!important;
+  left:50%!important;
+  bottom:14px!important;
+  transform:translateX(-50%)!important;
+  z-index:99999!important;
+
+  width:min(760px,calc(100% - 24px))!important;
+
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:10px!important;
+
+  padding:10px!important;
+  margin:0!important;
+
+  background:rgba(255,255,255,.96)!important;
+  border:1px solid #d4def4!important;
+  border-radius:18px!important;
+  box-shadow:0 16px 45px rgba(0,0,0,.18)!important;
+}
+
+.actions a{
+  min-height:54px!important;
+
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+
+  border-radius:13px!important;
+  font-size:17px!important;
+  font-weight:900!important;
+  white-space:nowrap!important;
+  text-decoration:none!important;
+}
+
+.actions .call{
+  background:#2563eb!important;
+  color:#ffffff!important;
+  -webkit-text-fill-color:#ffffff!important;
+}
+
+.actions .sms{
+  background:#312e81!important;
+  color:#ffffff!important;
+  -webkit-text-fill-color:#ffffff!important;
+}
+
+main:has(.actions){
+  padding-bottom:125px!important;
+}
+
+footer{
+  color:#687796!important;
+  -webkit-text-fill-color:#687796!important;
+}
+
+footer strong{
+  color:#294b9b!important;
+  -webkit-text-fill-color:#294b9b!important;
+}
+
+@media(max-width:1100px){
+  .company-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  }
+}
+
+@media(max-width:900px){
+  .ry-longtext-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+
+@media(max-width:760px){
+
+  main{
+    width:min(100% - 24px,1240px)!important;
+  }
+
+  .company-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+
+  body:has(.actions) section:has(table)::before{
+    height:230px!important;
+    border-radius:18px!important;
+  }
+
+  body:has(.actions) section:has(table){
+    padding:16px!important;
+  }
+}
+
+@media(max-width:560px){
+
+  .company-grid,
+  .ry-longtext-grid{
+    grid-template-columns:1fr!important;
+  }
+
+  .company-grid .company-card{
+    min-height:0!important;
+  }
+
+  .actions{
+    bottom:8px!important;
+    width:calc(100% - 16px)!important;
+    padding:8px!important;
+  }
+
+  .actions a{
+    min-height:52px!important;
+    font-size:16px!important;
+  }
+}
+
+/* SITE26-32-FINAL-DESIGN END */
