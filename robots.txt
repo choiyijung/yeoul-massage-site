@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /search.html
+Disallow: /login.html
+Disallow: /join.html
+Disallow: /mypage.html
+Disallow: /shop.html
 
-Sitemap: https://misomassage.shop/sitemap.xml
+Sitemap: https://yeoul-massage.netlify.app/sitemap.xml
